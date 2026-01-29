@@ -3,11 +3,11 @@
 section {
   opacity: 0;
   animation: none;
-  will-change: opacity;
 }
 
 section.fade-in-visible {
   animation: fadeInBounce 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  will-change: opacity, transform;
 }
 
 @keyframes fadeInBounce {
