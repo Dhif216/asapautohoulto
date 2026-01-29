@@ -74,33 +74,6 @@
   opacity: 1;
 }
 
-.contact-line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
-  pointer-events: none;
-}
-
-@keyframes drawLine {
-  from {
-    stroke-dashoffset: 1200;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.contact-line path {
-  animation: none;
-}
-
-.contact-line.animate-line path {
-  animation: drawLine 2s ease-in-out 0.3s forwards;
-}
-
 .contact-icons-container {
   position: static;
   display: flex;
@@ -136,8 +109,16 @@
   animation-delay: 0.5s;
 }
 
-.contact-icon.google {
+.contact-icon.facebook {
   animation-delay: 0.6s;
+}
+
+.contact-icon.instagram {
+  animation-delay: 0.7s;
+}
+
+.contact-icon.tiktok {
+  animation-delay: 0.8s;
 }
 
 @keyframes popInBounce {

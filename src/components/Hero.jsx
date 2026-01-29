@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { LanguageContext } from '../context/LanguageContext'
-import { FaEnvelope, FaWhatsapp, FaGoogle } from 'react-icons/fa'
+import { FaEnvelope, FaWhatsapp, FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import './Hero.css'
 
@@ -18,30 +18,23 @@ export default function Hero() {
         
         {/* Social Icons Below Button */}
         <div className="contact-icons-container">
-          <a href="mailto:info@asapservice.fi" className="contact-icon email" title="Email">
+          <a href="mailto:info@asapautohuolto.fi" className="contact-icon email" title="Email">
             <FaEnvelope />
           </a>
           <a href="https://wa.me/358" className="contact-icon whatsapp" title="WhatsApp">
             <FaWhatsapp />
           </a>
-          <a href="https://www.google.com" className="contact-icon google" title="Google">
-            <FaGoogle />
+          <a href="https://www.facebook.com/profile.php?id=61575265730067&mibextid=wwXIfr&rdid=oKaGVJsovE6Fx3qI&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GsYt6r68S%2F%3Fmibextid%3DwwXIfr" className="contact-icon facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
+            <FaFacebook />
+          </a>
+          <a href="https://www.instagram.com/asap_autohuolto?igsh=MTNuNnBtdzZhN210eQ%3D%3D&utm_source=qr" className="contact-icon instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+          <a href="https://www.tiktok.com/@asap.autohuolto" className="contact-icon tiktok" title="TikTok" target="_blank" rel="noopener noreferrer">
+            <FaTiktok />
           </a>
         </div>
       </div>
-
-      {/* Contact Line with Icons */}
-      <svg className={`contact-line ${isVisible ? 'animate-line' : ''}`} viewBox="0 0 1200 600" preserveAspectRatio="none">
-        <path
-          d="M 230 480 L 1100 480 L 1100 150"
-          stroke="#0052cc"
-          strokeWidth="2.5"
-          fill="none"
-          strokeLinecap="round"
-          strokeDasharray="1200"
-          strokeDashoffset="1200"
-        />
-      </svg>
 
       <div className="hero-overlay"></div>
     </section>
