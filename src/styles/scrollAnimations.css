@@ -3,6 +3,7 @@
 section {
   opacity: 0;
   animation: none;
+  will-change: opacity;
 }
 
 section.fade-in-visible {
@@ -12,13 +13,13 @@ section.fade-in-visible {
 @keyframes fadeInBounce {
   0% {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(20px);
   }
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
   }
   75% {
-    transform: translateY(2px);
+    transform: translateY(1px);
   }
   100% {
     opacity: 1;
