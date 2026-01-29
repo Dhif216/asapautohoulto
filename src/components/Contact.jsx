@@ -40,11 +40,6 @@ export default function Contact() {
     { icon: FaClock, label: t.contact.contactHours, value: t.contact.hoursText, index: 2 },
   ]
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    alert('Message sent! We will contact you soon.')
-  }
-
   return (
     <section ref={sectionRef} id="contact" className={`contact ${sectionVisible ? 'fade-in-visible' : ''}`}>
       <div className="container">
@@ -52,19 +47,19 @@ export default function Contact() {
         <div className="contact-content">
           <div className="contact-info">
             <h3>{t.contact.quickContact}</h3>
-            {contactItems.map((item) => {
-              const IconComponent = item.icon
-              return (
-                <div
-                  key={item.index}
-                  className={`info-item ${visibleItems[item.index] ? 'animate' : ''}`}
-                  ref={(el) => (itemsRef.current[item.index] = el)}
-                  data-item-index={item.index}
-                >
-                  <div className="icon-wrapper">
-                    <IconComponent className="icon" />
-                  </div>
-                  <div>
+            <div className="info-items-grid">
+              {contactItems.map((item) => {
+                const IconComponent = item.icon
+                return (
+                  <div
+                    key={item.index}
+                    className={`info-item ${visibleItems[item.index] ? 'animate' : ''}`}
+                    ref={(el) => (itemsRef.current[item.index] = el)}
+                    data-item-index={item.index}
+                  >
+                    <div className="icon-wrapper">
+                      <IconComponent className="icon" />
+                    </div>
                     <p className="label">{item.label}</p>
                     <p>
                       {item.href ? (
@@ -74,9 +69,9 @@ export default function Contact() {
                       )}
                     </p>
                   </div>
-                </div>
-              )
-            })}
+                )
+              })}
+            </div>
             <div className="map-container">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.48919378829!2d25.0518814!3d60.205735999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692092305d267d9%3A0x7bd28cea431cd2fb!2sASAP%20Autohuolto!5e0!3m2!1sen!2sfi!4v1769690534533!5m2!1sen!2sfi"
@@ -88,23 +83,6 @@ export default function Contact() {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-          </div>
-          <div className="contact-form">
-            <form onSubmit={handleSubmit}>
-              <div className="form-group">
-                <input type="text" placeholder={t.contact.form.name} required />
-              </div>
-              <div className="form-group">
-                <input type="email" placeholder={t.contact.form.email} required />
-              </div>
-              <div className="form-group">
-                <input type="tel" placeholder={t.contact.form.phone} />
-              </div>
-              <div className="form-group">
-                <textarea placeholder={t.contact.form.message} rows="5" required></textarea>
-              </div>
-              <button type="submit" className="submit-btn">{t.contact.form.send}</button>
-            </form>
           </div>
         </div>
       </div>

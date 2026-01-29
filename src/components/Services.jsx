@@ -1,10 +1,12 @@
 import { useContext } from 'react'
 import { LanguageContext } from '../context/LanguageContext'
-import { FaWrench, FaWheelchair, FaCog, FaBolt, FaWind, FaCar } from 'react-icons/fa'
+import { FaWrench, FaCogs, FaWind, FaCode } from 'react-icons/fa'
+import breakIcon from '../break.svg'
+import engineIcon from '../engine.png'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import './Services.css'
 
-const serviceIcons = [<FaWrench />, <FaWheelchair />, <FaCog />, <FaBolt />, <FaWind />, <FaCar />]
+const serviceIcons = [<FaWrench />, null, null, <FaCogs />, <FaWind />, <FaCode />]
 
 export default function Services() {
   const { t } = useContext(LanguageContext)
@@ -17,7 +19,9 @@ export default function Services() {
         <div className="services-grid">
           {t.services.items.map((service, index) => (
             <div key={index} className="service-card">
-              <div className="service-icon">{serviceIcons[index]}</div>
+              <div className="service-icon">
+                {index === 1 ? <img src={breakIcon} alt="Brakes" className="svg-icon" /> : index === 2 ? <img src={engineIcon} alt="Engine" className="svg-icon" /> : serviceIcons[index]}
+              </div>
               <h3>{service.name}</h3>
               <p>{service.desc}</p>
             </div>

@@ -2,7 +2,7 @@
   padding: 4rem 2rem 0 2rem;
   background-color: var(--bg-primary);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   transition: background-color 0.3s ease;
 }
 
@@ -122,6 +122,21 @@
   margin-bottom: 2.5rem;
 }
 
+.header-with-logo {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.header-with-logo h2 {
+  flex: 1;
+}
+
+.mobile-whatsapp-logo {
+  display: none;
+}
+
 .section-header h2 {
   font-size: 2.2rem;
   color: #0052cc;
@@ -218,16 +233,77 @@
 
 .stats-section {
   background-color: var(--bg-secondary);
-  padding: 4rem 2rem;
+  padding: 2.5rem 2rem;
   border-radius: 0;
   border-top: 2px solid var(--blue-primary);
   box-shadow: 0 2px 12px rgba(0, 82, 204, 0.08);
-  margin: 0 calc(-50vw + 50%);
-  padding-left: calc(50vw - 50% + 2rem);
-  padding-right: calc(50vw - 50% + 2rem);
   width: 100vw;
-  position: relative;
-  left: calc(-50vw + 50%);
+  margin-left: calc(50% - 50vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+}
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.experience-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--blue-primary);
+  text-align: center;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+  max-width: 100%;
+  margin: 0;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(30, end) infinite;
+}
+
+.authorized-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  opacity: 0.85;
+  letter-spacing: 0.3px;
+  margin: 0;
+  text-align: center;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  85% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.fade-in-visible .experience-title {
+  animation: typing 5s steps(30, end) infinite;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .stats-grid {
@@ -342,6 +418,10 @@
     display: none;
   }
 
+  .mobile-whatsapp-logo {
+    display: none;
+  }
+
   .why-choose-us {
     background-image: url('https://images.unsplash.com/photo-1563826773-1e2b4b2cde42?q=80&w=802&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   }
@@ -399,8 +479,17 @@
 
   .stats-section {
     margin: 0 -1rem 0 -1rem;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
     width: calc(100% + 2rem);
+    min-height: auto;
+  }
+
+  .experience-title {
+    font-size: 1.3rem;
+  }
+
+  .authorized-text {
+    font-size: 0.85rem;
   }
 
   .stats-grid {

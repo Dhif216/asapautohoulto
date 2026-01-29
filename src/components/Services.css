@@ -92,6 +92,14 @@
   transition: all 0.3s ease;
 }
 
+.service-icon .svg-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 8px;
+  filter: brightness(0) invert(1);
+}
+
 .service-card:hover .service-icon {
   transform: scale(1.1) rotate(5deg);
   box-shadow: 0 6px 16px rgba(0, 82, 204, 0.3);

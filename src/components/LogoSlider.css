@@ -1,0 +1,62 @@
+.logo-slider {
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 2rem 0;
+}
+
+.logo-track {
+  display: flex;
+  gap: 2rem;
+  animation: slide 20s linear infinite;
+  width: max-content;
+}
+
+.logo-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  height: 80px;
+}
+
+.logo-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.logo-item:hover img {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 1rem));
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .logo-track {
+    gap: 1.5rem;
+    animation: slide 15s linear infinite;
+  }
+
+  .logo-item {
+    min-width: 100px;
+    height: 60px;
+  }
+
+  .logo-item img {
+    opacity: 0.6;
+  }
+}

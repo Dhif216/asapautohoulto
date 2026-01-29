@@ -7,19 +7,20 @@ export const translations = {
     },
     hero: {
       title: 'ASAP Autohuolto',
-      subtitle: 'Drive with Confidence',
-      tagline: 'Our experienced and certified technicians are dedicated to providing you with the highest quality repairs, so you\'ll feel safe and secure on the road.',
-      cta: 'Get Started'
+      subtitle: 'Safe Driving Starts Here',
+      tagline: 'From routine maintenance to complex repairs, we keep your car running smoothly and safely for every journey ahead.',
+      cta: 'Get Started',
+      whatsappCta: 'Start Chatting'
     },
     services: {
       title: 'Our Services',
       items: [
-        { name: 'General Maintenance', desc: 'Oil changes, filter replacements, and routine maintenance' },
-        { name: 'Brake Service', desc: 'Brake inspection, pad replacement, and rotor service' },
-        { name: 'Engine Repair', desc: 'Diagnostic, repair, and overhaul services' },
-        { name: 'Transmission', desc: 'Transmission repair and fluid service' },
-        { name: 'Air Conditioning', desc: 'AC system repair and refrigerant refill' },
-        { name: 'Electrical', desc: 'Battery, alternator, and electrical system repair' }
+        { name: 'General Maintenance', desc: 'Maintenance times are scheduled quickly to fit your schedule, and all maintenance is done according to manufacturer guidelines.' },
+        { name: 'Brakes and Suspension', desc: 'We inspect and repair brakes and suspension quickly and professionally – safe driving guaranteed.' },
+        { name: 'Engine Repair', desc: 'Engine overhauls are our specialty – we care for your engine carefully and efficiently with long experience.' },
+        { name: 'Transmission', desc: 'We repair transmissions and clutches professionally. If needed, we buy and install used transmissions.' },
+        { name: 'Air Conditioning', desc: 'We perform air conditioning troubleshooting and repairs by trained and qualified professionals.' },
+        { name: 'Factory-level Programming', desc: 'Manufacturer remote programming and training – without a visit to the dealer.' },
       ]
     },
     hours: {
@@ -60,6 +61,8 @@ export const translations = {
     whyChooseUs: {
       title: 'Why Choose Us?',
       subtitle: 'We\'re here to understand your needs',
+      experienceTitle: 'Experience Since 2010',
+      authorizedText: 'Authorized for digital service records',
       benefits: [
         { title: 'Competitive Pricing', desc: 'We offer competitive pricing without compromising on quality.' },
         { title: 'Fast and Efficient Service', desc: 'We ensure your car is ready to drive with quick turnaround times.' },
@@ -105,19 +108,20 @@ export const translations = {
     },
     hero: {
       title: 'ASAP Autohuolto',
-      subtitle: 'Aja Luottavaisin Mielin',
-      tagline: 'Kokeneet ja sertifioidut teknikkomme ovat omistautuneet tarjoamaan sinulle korkeimman laadun korjauksia, jotta tunnet olosi turvalliseksi tiellä.',
-      cta: 'Aloita'
+      subtitle: 'Turvallinen Ajo Alkaa Täällä',
+      tagline: 'Rutiinihuolloista monimutkaisiin korjauksiin – me huolehdimme auton toimintakunnosta ja turvallisuudesta jokaisella matkalla.',
+      cta: 'Aloita',
+      whatsappCta: 'Aloita Keskustelu'
     },
     services: {
       title: 'Palvelumme',
       items: [
-        { name: 'Yleinen Huolto', desc: 'Öljynvaihdot, suodattimien vaihdot ja säännöllinen huolto' },
-        { name: 'Jarrupalvelu', desc: 'Jarrujen tarkastus, kenkien vaihto ja roottoreiden palvelu' },
-        { name: 'Moottorin korjaus', desc: 'Diagnostiikka, korjaus ja peruskorjaus' },
-        { name: 'Vaihteisto', desc: 'Vaihteiston korjaus ja nesteen palvelu' },
-        { name: 'Ilmastointi', desc: 'AC-järjestelmän korjaus ja jäähdytysnesteen täyttö' },
-        { name: 'Sähköjärjestelmä', desc: 'Akun, generaattorin ja sähköjärjestelmän korjaus' }
+        { name: 'Yleinen huolto', desc: 'Huoltoajat sovitetaan nopeasti sinun aikatauluusi, ja huollot tehdään myös valmistajan ohjeiden mukaan' },
+        { name: 'Jarrut ja alusta', desc: 'Tarkistamme ja korjaamme jarrut sekä alustan nopeasti ja ammattitaidolla – turvallinen ajo varmistettu.' },
+        { name: 'Moottorin korjaus', desc: 'Erikoisosaamistamme ovat moottoriremontit – huolehdimme moottoristasi tarkasti ja tehokkaasti pitkällä kokemuksella.' },
+        { name: 'Vaihteisto ja kytkin', desc: 'Korjaamme vaihteistot ja kytkinremontit ammattitaidolla. Tarvittaessa ostamme ja asennamme käytetyt vaihteistot' },
+        { name: 'Ilmastointi', desc: 'Teemme ilmastoinnin vianhaun ja korjaukset koulutettujen ja pätevien ammattilaisten toimesta.' },
+        { name: 'Tehdastason ohjelmoinnit', desc: 'Valmistajan etäohjelmoinnit ja opetukset – ilman käyntiä maahantuojalla' },
       ]
     },
     hours: {
@@ -158,11 +162,13 @@ export const translations = {
     whyChooseUs: {
       title: 'Miksi Valita Meidät?',
       subtitle: 'Olemme täällä ymmärtämään tarpeesi',
+      experienceTitle: 'Kokemusta vuodesta 2010',
+      authorizedText: 'Valtuutettu sähköiseen huoltokirjaan',
       benefits: [
         { title: 'Kilpailukykyinen Hinnoittelu', desc: 'Tarjoamme kilpailukykyisiä hintoja ilman kompromisseja laadusta.' },
         { title: 'Nopea ja Tehokas Palvelu', desc: 'Varmistamme, että autosi on valmis ajettavaksi nopealla huoltoajalla.' },
         { title: 'Kokeneet ja Sertifioidut Teknikot', desc: 'Kaikki teknikkomme ovat sertifioituja ammattilaisia parhain standardi.' },
-        { title: 'Korkealaatuisten Osien Käyttö', desc: 'Käytämme vain korkealaatusiata osia ja varustusta kaikissa korjauksissa.' }
+        { title: 'Korkealaatuisten Osien Käyttö', desc: 'Käytämme vain korkealaatusiata osia ja varustetta kaikissa korjauksissa.' }
       ],
       stats: [
         { number: '20', label: 'Vuotta Kokemusta' },

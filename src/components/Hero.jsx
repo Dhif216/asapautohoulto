@@ -14,15 +14,17 @@ export default function Hero() {
         <h2>{t.hero.title}</h2>
         <p>{t.hero.subtitle}</p>
         <p className="tagline">{t.hero.tagline}</p>
-        <button className="cta-button">{t.hero.cta}</button>
         
-        {/* Social Icons Below Button */}
+        {/* Large WhatsApp CTA Icon */}
+        <a href="https://wa.me/358" className="whatsapp-cta" title="WhatsApp">
+          <FaWhatsapp />
+          <span>{t.hero.whatsappCta}</span>
+        </a>
+        
+        {/* Social Icons Below */}
         <div className="contact-icons-container">
           <a href="mailto:info@asapautohuolto.fi" className="contact-icon email" title="Email">
             <FaEnvelope />
-          </a>
-          <a href="https://wa.me/358" className="contact-icon whatsapp" title="WhatsApp">
-            <FaWhatsapp />
           </a>
           <a href="https://www.facebook.com/profile.php?id=61575265730067&mibextid=wwXIfr&rdid=oKaGVJsovE6Fx3qI&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GsYt6r68S%2F%3Fmibextid%3DwwXIfr" className="contact-icon facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
             <FaFacebook />
@@ -37,6 +39,9 @@ export default function Hero() {
       </div>
 
       <div className="hero-overlay"></div>
+      <div className="hero-logo">
+        <img src="/asapautohoulto/png logo.png" alt="ASAP Autohuolto" className="hero-logo-img" />
+      </div>
     </section>
   )
 }

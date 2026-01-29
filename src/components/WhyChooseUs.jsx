@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { LanguageContext } from '../context/LanguageContext'
 import { FaWrench, FaRocket, FaCertificate, FaAward } from 'react-icons/fa'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import LogoSlider from './LogoSlider'
 import './WhyChooseUs.css'
 
 export default function WhyChooseUs() {
@@ -44,13 +45,10 @@ export default function WhyChooseUs() {
       </div>
 
       <div className="stats-section">
-        <div className="stats-grid">
-          {t.whyChooseUs.stats.map((stat, index) => (
-            <div key={index} className="stat-item">
-              <h3 className="stat-number">{stat.number}</h3>
-              <p className="stat-label">{stat.label}</p>
-            </div>
-          ))}
+        <div className="experience-section">
+          <h2 className="experience-title">{t.whyChooseUs.experienceTitle}</h2>
+          <p className="authorized-text">{t.whyChooseUs.authorizedText}</p>
+          <LogoSlider />
         </div>
       </div>
     </section>

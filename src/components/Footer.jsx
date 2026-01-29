@@ -29,6 +29,11 @@ export default function Footer() {
             <p>{t.hours.address}</p>
             <p><a href="tel:0404608554">040 460 8554</a></p>
           </div>
+          <div className="footer-section footer-whatsapp">
+            <a href="https://wa.me/358" target="_blank" rel="noopener noreferrer" className="footer-whatsapp-icon" title="WhatsApp">
+              <img src="/asapautohoulto/whatsuplogo.png" alt="WhatsApp" />
+            </a>
+          </div>
         </div>
         <div className="footer-bottom">
           <p>&copy; {currentYear} ASAP Autohuolto. All rights reserved.</p>

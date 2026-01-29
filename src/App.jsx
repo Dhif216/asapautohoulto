@@ -1,6 +1,6 @@
 import './App.css'
 import './styles/scrollAnimations.css'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { LanguageProvider } from './context/LanguageContext'
 import { ThemeProvider } from './context/ThemeContext'
 import Header from './components/Header'
@@ -11,13 +11,23 @@ import Testimonials from './components/Testimonials'
 import Hours from './components/Hours'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
 
 function App() {
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768)
+
   useEffect(() => {
     // Disable automatic scroll restoration
     window.history.scrollRestoration = 'manual'
     // Always scroll to top on mount
     window.scrollTo(0, 0)
+
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 768)
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
   }, [])
 
   return (
@@ -26,6 +36,7 @@ function App() {
         <div className="app">
           <Header />
           <Hero />
+          {isDesktop && <FloatingWhatsApp />}
           <WhyChooseUs />
           <Services />
           <Testimonials />

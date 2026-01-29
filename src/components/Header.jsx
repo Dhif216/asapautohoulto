@@ -13,11 +13,6 @@ export default function Header() {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <img 
-            src="https://lh3.googleusercontent.com/p/AF1QipMZUg2Dd3GiQd7ZvFWovbHgpZj3GCvN-f-KdGbS=w203-h192-k-no" 
-            alt="ASAP Autohuolto Logo"
-            className="logo-img"
-          />
           <h1>ASAP Autohuolto</h1>
         </div>
 
