@@ -16,7 +16,7 @@ export default function Hero() {
         <p className="tagline">{t.hero.tagline}</p>
         
         {/* Large WhatsApp CTA Icon */}
-        <a href="https://wa.me/358" className="whatsapp-cta" title="WhatsApp">
+        <a href="https://wa.me/358404608554" className="whatsapp-cta" title="WhatsApp">
           <FaWhatsapp />
           <span>{t.hero.whatsappCta}</span>
         </a>
