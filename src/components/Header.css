@@ -1,0 +1,182 @@
+.header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 101;
+}
+
+.lang-toggle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #0052cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.lang-toggle-icon:hover {
+  background-color: #0040a0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 82, 204, 0.3);
+}
+
+.lang-toggle-icon .lang-code {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #0052cc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  border-radius: 4px;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: #0052cc;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #0052cc;
+}
+
+.lang-toggle {
+  background-color: #0052cc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.lang-toggle:hover {
+  background-color: #0040a0;
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .logo {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem;
+    display: none;
+  }
+
+  .logo-img {
+    height: 40px;
+  }
+
+  .header-actions {
+    gap: 0.5rem;
+  }
+
+  .lang-toggle-icon {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .lang-toggle-icon svg {
+    font-size: 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    flex-direction: column;
+    gap: 0;
+    border-bottom: 1px solid #e0e0e0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 99;
+  }
+
+  .nav.mobile-open {
+    max-height: 300px;
+  }
+
+  .nav a {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    display: block;
+  }
+}

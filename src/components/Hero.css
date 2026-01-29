@@ -1,0 +1,244 @@
+.hero {
+  height: 600px;
+  background-image: url('https://images.unsplash.com/photo-1603175922978-b10e84330c35?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid #0052cc;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 3rem;
+  margin-left: 2rem;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.hero p.tagline {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+  max-width: 500px;
+}
+
+.cta-button {
+  background-color: #0052cc;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+  opacity: 1;
+}
+
+.cta-button:hover {
+  background-color: #0040a0;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 82, 204, 0.3);
+  opacity: 1;
+}
+
+.contact-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 1200;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.contact-line path {
+  animation: none;
+}
+
+.contact-line.animate-line path {
+  animation: drawLine 2s ease-in-out 0.3s forwards;
+}
+
+.contact-icons-container {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  z-index: 4;
+  justify-content: flex-start;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0052cc 0%, #003d99 100%);
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 4px 15px rgba(0, 82, 204, 0.3);
+  text-decoration: none;
+  opacity: 0;
+  animation: popInBounce 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.contact-icon.email {
+  animation-delay: 0.4s;
+}
+
+.contact-icon.whatsapp {
+  animation-delay: 0.5s;
+}
+
+.contact-icon.google {
+  animation-delay: 0.6s;
+}
+
+@keyframes popInBounce {
+  0% {
+    opacity: 0;
+    transform: scale(0.2) translateY(20px);
+  }
+  50% {
+    transform: scale(1.15) translateY(-8px);
+  }
+  75% {
+    transform: scale(1.05) translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.contact-icon:hover {
+  transform: scale(1.15) rotate(-10deg);
+  box-shadow: 0 6px 20px rgba(0, 82, 204, 0.4);
+}
+
+.contact-icon.email {
+  animation-delay: 1.2s;
+}
+
+.contact-icon.whatsapp {
+  animation-delay: 1.4s;
+}
+
+.contact-icon.google {
+  animation-delay: 1.6s;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+
+  .hero-content {
+    padding: 2rem;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero p.tagline {
+    font-size: 0.85rem;
+  }
+
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-line {
+    display: none;
+  }
+
+  .contact-icons-container {
+    right: auto;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    justify-content: flex-start;
+  }
+
+  .contact-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+
+  .contact-icon.email {
+    animation-delay: 0.4s;
+  }
+
+  .contact-icon.whatsapp {
+    animation-delay: 0.5s;
+  }
+
+  .contact-icon.google {
+    animation-delay: 0.6s;
+  }
+}

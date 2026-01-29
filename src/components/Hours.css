@@ -1,0 +1,138 @@
+.hours {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.hours .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hours h2 {
+  font-size: 2.5rem;
+  color: #0052cc;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.hours-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hours-list {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 82, 204, 0.05);
+}
+
+.hour-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.hour-item:last-child {
+  border-bottom: none;
+}
+
+.hour-item .day {
+  font-weight: 600;
+  color: #1a1a1a;
+  min-width: 100px;
+}
+
+.hour-item .time {
+  color: #0052cc;
+  font-weight: 500;
+}
+
+.hour-item .time.closed {
+  color: #999;
+}
+
+.address-info {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #0052cc;
+  box-shadow: 0 2px 8px rgba(0, 82, 204, 0.05);
+}
+
+.address-info h3 {
+  color: #0052cc;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+
+.address-info h3:first-child {
+  margin-top: 0;
+}
+
+.address-info .address,
+.address-info .phone {
+  color: #666666;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.address-info .phone a {
+  color: #0052cc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.address-info .phone a:hover {
+  color: #0040a0;
+}
+
+@media (max-width: 768px) {
+  .hours {
+    padding: 2.5rem 1rem;
+  }
+
+  .hours h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .hours-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hours-table {
+    max-width: 100%;
+  }
+
+  .hours-table th,
+  .hours-table td {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .address-info {
+    padding: 1.5rem;
+  }
+
+  .address-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    margin-top: 1.2rem;
+  }
+
+  .address-info .address,
+  .address-info .phone {
+    font-size: 0.95rem;
+  }
+}
