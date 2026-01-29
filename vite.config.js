@@ -6,17 +6,9 @@ export default defineConfig({
   plugins: [react()],
   base: '/asapautohoulto/',
   server: {
-    middlewareMode: true,
     hmr: {
       protocol: 'ws',
       timeout: 60000,
-    },
-  },
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: undefined,
-      },
     },
   },
   logLevel: 'warn',
