@@ -1,10 +1,12 @@
 import { useContext, useState } from 'react'
-import { FaBars, FaTimes, FaGlobe } from 'react-icons/fa'
+import { FaBars, FaTimes, FaGlobe, FaMoon, FaSun } from 'react-icons/fa'
 import { LanguageContext } from '../context/LanguageContext'
+import { ThemeContext } from '../context/ThemeContext'
 import './Header.css'
 
 export default function Header() {
   const { t, language, toggleLanguage } = useContext(LanguageContext)
+  const { theme, toggleTheme } = useContext(ThemeContext)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -23,6 +25,10 @@ export default function Header() {
           <button className="lang-toggle-icon" onClick={toggleLanguage} title={language === 'en' ? 'Suomeksi' : 'In English'}>
             <FaGlobe />
             <span className="lang-code">{language === 'en' ? 'FI' : 'EN'}</span>
+          </button>
+
+          <button className="theme-toggle-icon" onClick={toggleTheme} title={theme === 'light' ? 'Dark Mode' : 'Light Mode'}>
+            {theme === 'light' ? <FaMoon /> : <FaSun />}
           </button>
           
           <button className="hamburger" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>

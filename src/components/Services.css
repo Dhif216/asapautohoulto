@@ -43,11 +43,12 @@
 }
 
 .service-card {
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   padding: 2.5rem 2rem;
   border-radius: 12px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--border-color);
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  color: var(--text-primary);
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   position: relative;
@@ -98,14 +99,14 @@
 
 .service-card h3 {
   font-size: 1.2rem;
-  color: #1a1a1a;
+  color: var(--text-primary);
   margin-bottom: 0.8rem;
   font-weight: 700;
   letter-spacing: -0.3px;
 }
 
 .service-card p {
-  color: #555555;
+  color: var(--text-secondary);
   line-height: 1.6;
   font-size: 0.9rem;
   font-weight: 400;

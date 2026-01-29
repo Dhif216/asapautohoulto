@@ -2,6 +2,7 @@ import './App.css'
 import './styles/scrollAnimations.css'
 import { useEffect } from 'react'
 import { LanguageProvider } from './context/LanguageContext'
+import { ThemeProvider } from './context/ThemeContext'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import WhyChooseUs from './components/WhyChooseUs'
@@ -20,18 +21,20 @@ function App() {
   }, [])
 
   return (
-    <LanguageProvider>
-      <div className="app">
-        <Header />
-        <Hero />
-        <WhyChooseUs />
-        <Services />
-        <Testimonials />
-        <Hours />
-        <Contact />
-        <Footer />
-      </div>
-    </LanguageProvider>
+    <ThemeProvider>
+      <LanguageProvider>
+        <div className="app">
+          <Header />
+          <Hero />
+          <WhyChooseUs />
+          <Services />
+          <Testimonials />
+          <Hours />
+          <Contact />
+          <Footer />
+        </div>
+      </LanguageProvider>
+    </ThemeProvider>
   )
 }
 

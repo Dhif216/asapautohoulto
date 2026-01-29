@@ -8,7 +8,7 @@
   justify-content: flex-start;
   position: relative;
   overflow: hidden;
-  border-bottom: 2px solid #0052cc;
+  border-bottom: 2px solid var(--blue-primary);
 }
 
 .hero-overlay {
@@ -54,7 +54,7 @@
 }
 
 .cta-button {
-  background-color: #0052cc;
+  background-color: var(--blue-primary);
   color: white;
   border: none;
   padding: 1rem 2.5rem;
@@ -68,7 +68,7 @@
 }
 
 .cta-button:hover {
-  background-color: #0040a0;
+  background-color: var(--blue-dark);
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 82, 204, 0.3);
   opacity: 1;
@@ -90,7 +90,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #0052cc 0%, #003d99 100%);
+  background: linear-gradient(135deg, var(--blue-primary) 0%, var(--blue-dark) 100%);
   border-radius: 50%;
   color: white;
   font-size: 1.5rem;

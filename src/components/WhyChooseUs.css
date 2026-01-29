@@ -1,8 +1,9 @@
 .why-choose-us {
   padding: 4rem 2rem 0 2rem;
-  background-color: #f8f9fa;
+  background-color: var(--bg-primary);
   position: relative;
   overflow: hidden;
+  transition: background-color 0.3s ease;
 }
 
 .why-choose-us-bg-shapes {
@@ -148,7 +149,7 @@
   display: flex;
   gap: 1.2rem;
   align-items: flex-start;
-  background-color: #ffffff;
+  background-color: var(--bg-secondary);
   padding: 1.4rem 1.6rem;
   border-radius: 8px;
   box-shadow: none;
@@ -156,7 +157,7 @@
   border-left: none;
   position: relative;
   overflow: hidden;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--border-color);
 }
 
 .benefit-item::before {
@@ -200,7 +201,7 @@
 }
 
 .benefit-text h3 {
-  color: #1a1a1a;
+  color: var(--text-primary);
   font-size: 0.95rem;
   margin-bottom: 0.35rem;
   font-weight: 700;
@@ -208,7 +209,7 @@
 }
 
 .benefit-text p {
-  color: #555555;
+  color: var(--text-secondary);
   line-height: 1.5;
   font-size: 0.87rem;
   font-weight: 400;
@@ -216,10 +217,10 @@
 }
 
 .stats-section {
-  background-color: #ffffff;
+  background-color: var(--bg-secondary);
   padding: 4rem 2rem;
   border-radius: 0;
-  border-top: 2px solid #0052cc;
+  border-top: 2px solid var(--blue-primary);
   box-shadow: 0 2px 12px rgba(0, 82, 204, 0.08);
   margin: 0 calc(-50vw + 50%);
   padding-left: calc(50vw - 50% + 2rem);
@@ -258,7 +259,7 @@
 .stat-number {
   font-size: 2.6rem;
   font-weight: 800;
-  color: #0052cc;
+  color: var(--blue-primary);
   margin-bottom: 0.6rem;
   letter-spacing: -1px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -291,7 +292,7 @@
 }
 
 .stat-label {
-  color: #666666;
+  color: var(--text-secondary);
   font-size: 1rem;
   font-weight: 500;
 }

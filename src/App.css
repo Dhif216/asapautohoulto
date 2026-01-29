@@ -13,9 +13,16 @@ body {
 }
 
 .app {
-  background-color: #ffffff;
-  color: #1a1a1a;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   min-height: 100vh;
+  width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  background-color: var(--bg-primary);
+  transition: background-color 0.3s ease;
 }
 
 @keyframes logo-spin {
