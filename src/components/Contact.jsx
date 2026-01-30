@@ -1,5 +1,5 @@
 import { useContext, useRef, useEffect, useState } from 'react'
-import { FaMapMarkerAlt, FaPhone, FaClock } from 'react-icons/fa'
+import { FaMapMarkerAlt, FaPhone, FaClock, FaWhatsapp } from 'react-icons/fa'
 import { LanguageContext } from '../context/LanguageContext'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import './Contact.css'
@@ -35,9 +35,10 @@ export default function Contact() {
   }, [])
 
   const contactItems = [
-    { icon: FaMapMarkerAlt, label: t.contact.address, value: t.hours.address, index: 0 },
-    { icon: FaPhone, label: t.contact.phone, value: '040 460 8554', href: 'tel:0404608554', index: 1 },
-    { icon: FaClock, label: t.contact.contactHours, value: t.contact.hoursText, index: 2 },
+    { icon: FaPhone, label: t.contact.phone, value: '040 460 8554', href: 'tel:0404608554', index: 0 },
+    { icon: FaWhatsapp, label: 'WhatsApp', value: 'Chat with us', href: 'https://wa.me/358404608554', index: 1 },
+    { icon: FaMapMarkerAlt, label: t.contact.address, value: t.hours.address, index: 2 },
+    { icon: FaClock, label: t.contact.contactHours, value: t.contact.hoursText, index: 3 },
   ]
 
   return (

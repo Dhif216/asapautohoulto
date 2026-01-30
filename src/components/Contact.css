@@ -97,9 +97,15 @@
 
 .info-items-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .info-items-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .info-item {
