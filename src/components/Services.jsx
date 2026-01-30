@@ -23,7 +23,7 @@ export default function Services() {
                 {index === 1 ? <img src={breakIcon} alt="Brakes" className="svg-icon" /> : index === 2 ? <img src={engineIcon} alt="Engine" className="svg-icon" /> : serviceIcons[index]}
               </div>
               <h3>{service.name}</h3>
-              <p>{service.desc}</p>
+              <p dangerouslySetInnerHTML={{ __html: service.desc }}></p>
             </div>
           ))}
         </div>

@@ -15,11 +15,11 @@ export const translations = {
     services: {
       title: 'Our Services',
       items: [
-        { name: 'General Maintenance', desc: 'Maintenance times are scheduled quickly to fit your schedule, and all maintenance is done according to manufacturer guidelines.' },
-        { name: 'Brakes and Suspension', desc: 'We inspect and repair brakes and suspension quickly and professionally – safe driving guaranteed.' },
+        { name: 'General Maintenance', desc: 'Maintenance times are scheduled quickly according to your schedule, and all maintenance is done according to manufacturer guidelines.' },
+        { name: 'Brakes and Suspension', desc: 'We inspect and repair brakes and suspension parts quickly and professionally – safe driving guaranteed.' },
         { name: 'Engine Repair', desc: 'Engine overhauls are our specialty – we care for your engine carefully and efficiently with long experience.' },
-        { name: 'Transmission', desc: 'We repair transmissions and clutches professionally. If needed, we buy and install used transmissions.' },
-        { name: 'Air Conditioning', desc: 'We perform air conditioning troubleshooting and repairs by trained and qualified professionals.' },
+        { name: 'Transmission and Clutch', desc: 'We perform clutch overhauls and repair transmissions professionally. If needed, we buy and install used transmissions.' },
+        { name: 'Air Conditioning', desc: '<strong>(R134A and R1234YF)</strong>\nWe perform air conditioning troubleshooting, leak detection and repairs by trained and qualified professionals.' },
         { name: 'Factory-level Programming', desc: 'Manufacturer remote programming and training – without a visit to the dealer.' },
       ]
     },
@@ -116,11 +116,11 @@ export const translations = {
     services: {
       title: 'Palvelumme',
       items: [
-        { name: 'Yleinen huolto', desc: 'Huoltoajat sovitetaan nopeasti sinun aikatauluusi, ja huollot tehdään myös valmistajan ohjeiden mukaan' },
-        { name: 'Jarrut ja alusta', desc: 'Tarkistamme ja korjaamme jarrut sekä alustan nopeasti ja ammattitaidolla – turvallinen ajo varmistettu.' },
+        { name: 'Yleinen huolto', desc: 'Huoltoajat sovitetaan nopeasti sinun aikatauluusi mukaan, ja huollot tehdään myös valmistajan ohjeiden mukaan' },
+        { name: 'Jarrut ja alusta', desc: 'Tarkistamme ja korjaamme jarrut sekä alustan osat nopeasti ja ammattitaidolla – turvallinen ajo varmistettu.' },
         { name: 'Moottorin korjaus', desc: 'Erikoisosaamistamme ovat moottoriremontit – huolehdimme moottoristasi tarkasti ja tehokkaasti pitkällä kokemuksella.' },
-        { name: 'Vaihteisto ja kytkin', desc: 'Korjaamme vaihteistot ja kytkinremontit ammattitaidolla. Tarvittaessa ostamme ja asennamme käytetyt vaihteistot' },
-        { name: 'Ilmastointi', desc: 'Teemme ilmastoinnin vianhaun ja korjaukset koulutettujen ja pätevien ammattilaisten toimesta.' },
+        { name: 'Vaihteisto ja kytkin', desc: 'Teemme kytkinremontit ja korjaamme vaihteistot ammattitaidolla. Tarvittaessa ostamme ja asennamme käytetyt vaihteistot' },
+        { name: 'Ilmastointi', desc: '<strong>(R134A ja R1234YF)</strong>\nTeemme ilmastoinnin vianhaun, vuodon etsintä ja korjaukset koulutettujen- ja pätevien ammattilaisten toimesta.' },
         { name: 'Tehdastason ohjelmoinnit', desc: 'Valmistajan etäohjelmoinnit ja opetukset – ilman käyntiä maahantuojalla' },
       ]
     },
