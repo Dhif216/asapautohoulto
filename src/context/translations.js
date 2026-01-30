@@ -10,14 +10,14 @@ export const translations = {
       subtitle: 'Safe Driving Starts Here',
       tagline: 'From routine maintenance to complex repairs, we keep your car running smoothly and safely for every journey ahead.',
       cta: 'Get Started',
-      whatsappCta: 'Start Chatting'
+      whatsappCta: 'Book Now'
     },
     services: {
       title: 'Our Services',
       items: [
         { name: 'General Maintenance', desc: 'Maintenance times are scheduled quickly according to your schedule, and all maintenance is done according to manufacturer guidelines.' },
         { name: 'Brakes and Suspension', desc: 'We inspect and repair brakes and suspension parts quickly and professionally – safe driving guaranteed.' },
-        { name: 'Engine Repair', desc: 'Engine overhauls are our specialty – we care for your engine carefully and efficiently with long experience.' },
+        { name: 'Engine Repair', desc: 'Engine overhauls are our specialty – we care for your engine carefully and efficiently with long experience. If the engine cannot be repaired, we also offer affordable used engines with installation.' },
         { name: 'Transmission and Clutch', desc: 'We perform clutch overhauls and repair transmissions professionally. If needed, we buy and install used transmissions.' },
         { name: 'Air Conditioning', desc: '<strong>(R134A and R1234YF)</strong>\nWe perform air conditioning troubleshooting, leak detection and repairs by trained and qualified professionals.' },
         { name: 'Factory-level Programming', desc: 'We have manufacturer diagnostic equipment to perform remote programming, training and post-installation adjustments. We also perform control unit software transfers, such as ECU replacements and software transfers – without needing a separate visit to the dealer.' },
@@ -43,6 +43,7 @@ export const translations = {
       quickContact: 'Quick Contact',
       address: 'Address',
       phone: 'Phone',
+      email: 'Email',
       contactHours: 'Hours',
       hoursText: 'Mon - Fri: 8:00 AM - 4:30 PM\nSat - Sun: Closed',
       form: {
@@ -56,7 +57,9 @@ export const translations = {
     footer: {
       description: 'Professional automotive repair and maintenance services in Helsinki.',
       quickLinks: 'Quick Links',
-      contactInfo: 'Contact'
+      contactInfo: 'Contact',
+      privacy: 'Privacy Policy',
+      gdpr: 'GDPR & Data Protection'
     },
     whyChooseUs: {
       title: 'Why Choose Us?',
@@ -111,14 +114,14 @@ export const translations = {
       subtitle: 'Turvallinen Ajo Alkaa Täällä',
       tagline: 'Rutiinihuolloista monimutkaisiin korjauksiin – me huolehdimme auton toimintakunnosta ja turvallisuudesta jokaisella matkalla.',
       cta: 'Aloita',
-      whatsappCta: 'Aloita Keskustelu'
+      whatsappCta: 'Varaa aika'
     },
     services: {
       title: 'Palvelumme',
       items: [
         { name: 'Yleinen huolto', desc: 'Huoltoajat sovitetaan nopeasti sinun aikatauluusi mukaan, ja huollot tehdään myös valmistajan ohjeiden mukaan' },
         { name: 'Jarrut ja alusta', desc: 'Tarkistamme ja korjaamme jarrut sekä alustan osat nopeasti ja ammattitaidolla – turvallinen ajo varmistettu.' },
-        { name: 'Moottorin korjaus', desc: 'Erikoisosaamistamme ovat moottoriremontit – huolehdimme moottoristasi tarkasti ja tehokkaasti pitkällä kokemuksella.' },
+        { name: 'Moottorin korjaus', desc: 'Erikoisosaamistamme ovat moottoriremontit – huolehdimme moottoristasi tarkasti ja tehokkaasti pitkällä kokemuksella. Mikäli moottoria ei voida korjata, tarjoamme myös edullisia käytettyjä moottoreita asennettuna.' },
         { name: 'Vaihteisto ja kytkin', desc: 'Teemme kytkinremontit ja korjaamme vaihteistot ammattitaidolla. Tarvittaessa ostamme ja asennamme käytetyt vaihteistot' },
         { name: 'Ilmastointi', desc: '<strong>(R134A ja R1234YF)</strong>\nTeemme ilmastoinnin vianhaun, vuodon etsintä ja korjaukset koulutettujen- ja pätevien ammattilaisten toimesta.' },
         { name: 'Tehdastason ohjelmoinnit', desc: 'Käytössämme on valmistajan yhteyslaite, jolla teemme etäohjelmoinnit, opetukset ja osien asennuksen jälkeiset sopeutukset. Teemme myös ohjainlaitteiden ohjelmistojen siirrot, kuten ECU-vaihdot ja softansiirrot – ilman erillistä käyntiä maahantuojalla' },
@@ -144,6 +147,7 @@ export const translations = {
       quickContact: 'Nopea Yhteys',
       address: 'Osoite',
       phone: 'Puhelin',
+      email: 'Sähköposti',
       contactHours: 'Aukioloajat',
       hoursText: 'Ma - Pe: 8:00 - 16:30\nLa - Su: Suljettu',
       form: {
@@ -157,7 +161,9 @@ export const translations = {
     footer: {
       description: 'Ammattimainen autotekniikan korjaus ja huolto Helsingissä.',
       quickLinks: 'Pikalinkit',
-      contactInfo: 'Yhteystiedot'
+      contactInfo: 'Yhteystiedot',
+      privacy: 'Tietosuojakäytäntö',
+      gdpr: 'GDPR & Tietosuoja'
     },
     whyChooseUs: {
       title: 'Miksi Valita Meidät?',
