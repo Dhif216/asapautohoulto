@@ -35,8 +35,8 @@ export default function Contact() {
   }, [])
 
   const contactItems = [
-    { icon: FaPhone, label: t.contact.phone, value: '040 460 8554', href: 'tel:0404608554', index: 0 },
-    { icon: FaWhatsapp, label: 'WhatsApp', value: 'Chat with us', href: 'https://wa.me/358404608554', index: 1 },
+    { icon: FaWhatsapp, label: 'WhatsApp', value: 'Chat with us', href: 'https://wa.me/358404608554', index: 0 },
+    { icon: FaPhone, label: t.contact.phone, value: '040 460 8554', href: 'tel:0404608554', index: 1 },
     { icon: FaMapMarkerAlt, label: t.contact.address, value: t.hours.address, index: 2 },
     { icon: FaClock, label: t.contact.contactHours, value: t.contact.hoursText, index: 3 },
   ]
