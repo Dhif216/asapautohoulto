@@ -121,6 +121,24 @@
   color: var(--blue-primary);
 }
 
+.nav a.varaa-aika-btn {
+  background: linear-gradient(135deg, #25D366 0%, #20BA5A 100%);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.nav a.varaa-aika-btn:hover {
+  background: linear-gradient(135deg, #20BA5A 0%, #1aa74d 100%);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.5);
+}
+
 .lang-toggle {
   background-color: #0052cc;
   color: white;
@@ -222,5 +240,21 @@
     padding: 1rem 2rem;
     border-bottom: 1px solid var(--border-color);
     display: block;
+  }
+
+  .nav a.varaa-aika-btn {
+    background: linear-gradient(135deg, #25D366 0%, #20BA5A 100%);
+    color: white;
+    padding: 1rem 2rem;
+    margin: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+  }
+
+  .nav a.varaa-aika-btn:hover {
+    background: linear-gradient(135deg, #20BA5A 0%, #1aa74d 100%);
   }
 }

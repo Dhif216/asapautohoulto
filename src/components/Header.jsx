@@ -35,6 +35,9 @@ export default function Header() {
           <a href="#services" onClick={() => setMobileMenuOpen(false)}>{t.header.services}</a>
           <a href="#hours" onClick={() => setMobileMenuOpen(false)}>{t.header.hours}</a>
           <a href="#contact" onClick={() => setMobileMenuOpen(false)}>{t.header.contact}</a>
+          <a href="https://wa.me/358404608554" target="_blank" rel="noopener noreferrer" className="varaa-aika-btn" onClick={() => setMobileMenuOpen(false)}>
+            {language === 'fi' ? 'Varaa aika' : 'Book Now'}
+          </a>
         </nav>
       </div>
     </header>
